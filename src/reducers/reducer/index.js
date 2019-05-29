@@ -1,8 +1,8 @@
-import { SET_CUSTOM_NAME } from '../../actionTypes/reducer';
+import { INITIAL_DATA } from '../../actionTypes/reducer';
 
 export default function reducer(state, action) {
 	switch (action.type) {
-		case SET_CUSTOM_NAME:
+		case INITIAL_DATA:
 			return state;
 		default:
 			return state;
