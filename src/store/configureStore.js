@@ -1,4 +1,4 @@
-if (process.env.NODE_ENV !== 'development' || process.env.PLATFORM_ENV !== 'web') {
+if (process.env.NODE_ENV !== 'development') {
 	module.exports = require('./configureStore.prod');
 } else {
 	module.exports = require('./configureStore.dev');
