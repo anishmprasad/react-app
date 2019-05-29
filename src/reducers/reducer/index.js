@@ -1,6 +1,6 @@
 import { INITIAL_DATA } from '../../actionTypes/reducer';
-
-export default function reducer(state, action) {
+const initialState = {};
+export default function reducer(state = initialState, action) {
 	switch (action.type) {
 		case INITIAL_DATA:
 			return state;
