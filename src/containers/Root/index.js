@@ -4,6 +4,8 @@ import { Provider } from 'react-redux';
 import { connect } from 'react-redux';
 // import { bindActionCreators } from 'redux';
 import PropTypes from 'prop-types';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
 // import 'styles/index.scss';
 import App from '../../App';
 
