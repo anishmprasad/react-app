@@ -14,7 +14,7 @@ class Root extends Component {
 		super(props);
 	}
 	render() {
-		{
+		return (
 			<Provider store={this.props.store}>
 				{
 					<BrowserRouter>
@@ -23,8 +23,8 @@ class Root extends Component {
 						</Switch>
 					</BrowserRouter>
 				}
-			</Provider>;
-		}
+			</Provider>
+		);
 	}
 }
 
