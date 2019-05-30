@@ -10,19 +10,14 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import App from '../../components/App';
 
 class Root extends Component {
-	constructor(props) {
-		super(props);
-	}
 	render() {
 		return (
 			<Provider store={this.props.store}>
-				{
-					<BrowserRouter>
-						<Switch>
-							<Route path='/' component={App} />
-						</Switch>
-					</BrowserRouter>
-				}
+				<BrowserRouter>
+					<Switch>
+						<Route path='/' component={App} />
+					</Switch>
+				</BrowserRouter>
 			</Provider>
 		);
 	}
@@ -34,18 +29,11 @@ Root.propTypes = {
 
 // function mapStateToProps(state) {
 // 	return {
-// 		goal_and_exams: state.atgData.goal_and_exams,
-// 		userinfo: state.atgData.userInfo
 // 	};
 // }
 // function mapDispatchToProps(dispatch) {
 // 	return bindActionCreators(
 // 		{
-// 			verifyUser,
-// 			registerCount,
-// 			user_details,
-// 			fetch_goal_and_exams,
-// 			get_ip_details
 // 		},
 // 		dispatch
 // 	);
