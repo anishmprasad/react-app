@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // import 'styles/index.scss';
-import App from '../../App';
+import App from '../../components/App';
 
 class Root extends Component {
 	constructor(props) {
