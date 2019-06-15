@@ -6,22 +6,30 @@ import { ApolloProvider } from 'react-apollo';
 import Listing from '../Listing';
 import MeetingRooms from '../MeetingRooms';
 
+import ThemeProvider from '../App/ThemeProvider';
+import ComponentOne from '../App/ComponentOne';
+import ComponentTwo from '../App/ComponentTwo';
+
 const client = new ApolloClient({
 	uri: 'http://smart-meeting.herokuapp.com/graphql'
 });
 
 export default function App() {
 	return (
-		<ApolloProvider client={client}>
-			<div className='App'>
-				<header className='App-header'>
-					{/* <img src={logo} className='App-logo' alt='logo' /> */}
-					Smart Meeting Organizer
-				</header>
-				<Listing />
-				<MeetingRooms />
-			</div>
-		</ApolloProvider>
+		// <ApolloProvider client={client}>
+		// 	<div className='App'>
+		// 		<header className='App-header'>
+		// 			{/* <img src={logo} className='App-logo' alt='logo' /> */}
+		// 			Smart Meeting Organizer
+		// 		</header>
+		// 		<Listing />
+		// 		<MeetingRooms />
+		// 	</div>
+		// </ApolloProvider>
+		<ThemeProvider theme={'red'}>
+			<ComponentOne />
+			<ComponentTwo />
+		</ThemeProvider>
 	);
 }
 
